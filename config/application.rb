@@ -1,6 +1,5 @@
 require_relative 'boot'
-require 'carrierwave'
-require 'carrierwave/orm/activerecord'
+
 require 'mini_magick'
 require 'rails/all'
 
