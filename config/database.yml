@@ -1,0 +1,18 @@
+# This file is not normally versioned in git, but we have versioned it in order to enable
+# a larger-than-default connection pool in production.
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: picnicinfo_dev
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: picnicinfo_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch('DATABASE_POOL', 5) %>
