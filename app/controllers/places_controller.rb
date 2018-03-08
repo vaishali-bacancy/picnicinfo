@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
   load_and_authorize_resource
   before_action :authenticate_user!, except: [:index, :show]
-  #layout 'adminlayout'
+  layout 'adminlayout'
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
   # GET /places
